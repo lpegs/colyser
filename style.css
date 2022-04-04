@@ -1,0 +1,318 @@
+html{
+    background-color: #cdcdcd;
+}
+
+*{
+    margin: 0;
+    padding: 0.5%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.header{
+    animation: fadein 2s;
+    background-image: url("images/headertest.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+
+.center{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.colyserlogo{
+    margin-top: 8%;
+    width: 50%;
+    animation: fadein 5s;
+}
+
+.colyserlogo img{
+    max-width: 100%;
+}
+
+.description{
+    margin-top: 10%;
+    font-size: 25px;
+    font-weight: bold;
+    white-space: nowrap;
+    color: #303030;
+    width: 50%;
+    animation: fadein 5s;
+}
+
+.btn {
+    width: 100%;
+    margin-top: 20%;
+}
+
+.button {
+    animation: fadein 5s;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    padding-left: 60px;
+    padding-right: 60px;
+    height: 80px;
+    width: 190px;
+    margin-top: 24%;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(48, 48, 48);
+    color: rgb(205, 205, 205);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.24),0 0 50px 0 rgba(0,0,0,0.19);
+}
+
+.buttonshadow:hover {
+    color:#303030;
+    background-color: #cdcdcd;
+  }
+
+.arrow{
+    height: 500px;
+    background-color: transparent;
+}
+
+/* .arrow_icon {
+    width: 5%;
+    margin-top: 20%;
+} */
+
+section.main{
+    padding: 5%;
+}
+
+.center_main{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph01{
+    display: flex;
+    width: 100%;
+    margin-top: 20%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.graph01_data{
+    width: 50%;
+}
+
+.textgraph01{
+    width: 50%;
+    color: #303030;
+}
+
+.graph02{
+    display: flex;
+    width: 100%;
+    margin-top: 30%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.textgraph02{
+    width: 50%;
+    color: #303030;
+}
+
+.graph02_data{
+    width: 50%;
+}
+
+.footer{
+    background-color: #818081;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    align-items: center;
+    margin-top: 30%;
+}
+
+.center2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.last_update{
+    width: 49%;
+}
+
+.last_update h4{
+    color: #303030;
+    width: 100%;
+    white-space: nowrap;
+    font-weight: normal;
+}
+
+.vertical_line{
+    width: 2%;
+}
+
+.owl_icon{
+    width: 49%;
+}
+
+.owl_icon img{
+    width: 20%;
+}
+
+.horizontal_line {
+    width: 100%;
+}
+
+.horizontal_line img{
+    width: 100%;
+}
+
+.footer_bootom{
+    color:#303030;
+    width: 100%;
+    white-space: nowrap;
+    font-size: 15px;
+    font-weight: normal;
+    display: flex;
+}
+
+.terms{
+    color: #303030;
+    width: 50%;
+    text-decoration: none;
+}
+
+.terms:hover{
+    color:#6b6b6b;
+    width: 50%;
+    text-decoration: none;
+}
+
+.madewith {
+    width: 50%;
+}
+
+@keyframes fadein{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@media  screen and (max-width: 768px) {
+    
+    .colyserlogo{
+        margin-top: 15%;
+        width: 80%;
+        animation: fadein 5s;
+    }
+
+    .description{
+        margin-top: 20%;
+        font-size: 15px;
+        font-weight: bold;
+        white-space: nowrap;
+        color: #303030;
+        width: 100%;
+        animation: fadein 5s;
+    }
+
+    .btn {
+        width: 100%;
+        margin-top: 25%;
+    }
+
+    .button {
+        padding-top: 26px;
+        padding-bottom: 26px;
+        height: 80px;
+        width: 190px;
+        margin-top: 20%;
+        font-size: 20px;
+        border: none;
+        background-color: rgb(48, 48, 48);
+        color: rgb(205, 205, 205);
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        transition-duration: 0.4s;
+        box-shadow: 0 0 20px 0 rgba(0,0,0,0.24),0 0 50px 0 rgba(0,0,0,0.19);
+    }
+
+    .arrow{
+        height: 300px;
+        background-color: transparent;
+    }
+    /* .arrow_icon {
+        width: 50px;
+        margin-top: 10%;
+    } */
+
+    .footer{
+        background-color: #818081;
+        width: 100%;
+        padding-top: 4%;
+    }
+
+    .vertical_line img{
+        width: 10%;
+        margin-top: 10%;
+    }
+
+    .horizontal_line {
+        width: 100%;
+    }
+    
+    .horizontal_line img{
+        width: 99%;
+    }
+
+    .footer_bootom{
+        color:#303030;
+        width: 100%;
+        white-space: nowrap;
+        font-size: 15px;
+        font-weight: normal;
+        display:block;
+    }
+
+    .terms{
+        color: #303030;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    .terms:hover{
+        color:#6b6b6b;
+        width: 100%;
+        text-decoration: none;
+    }
+
+    .madewith {
+        width: 100%;
+        float: right;
+    }
+
+}
