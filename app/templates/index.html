@@ -17,19 +17,40 @@
         <header class="header">
             <div class="center">
                 <div class="colyserlogo">
-                    <img src="{{url_for('static', filename = 'images/colyser.png')}}">
+                    <img src="../static/images/colyser.png">
                 </div>
                 <h4 class="description">
                     COVID-19 CASES AND SYMPTOMS ANALYSER
                 </h4>
                 <div class="btn">
-                    <a class="button buttonshadow" href="#">NEW CASE</a>
+                    <a id="modalBtn" class="button buttonshadow">NEW CASE</a>
                 </div>
-                <div class="arrow">
-                    <!-- <img class="arrow_icon" src="images/arrow_icon.png"> -->
-                </div>
+
+                <div class="arrow"></div>
             </div><!--center-->
         </header><!--header-->
+
+        <div id="formModal" class="modal">
+            <div class="container">
+                <form class="modal-content" action="/action_page.php">
+                    <spam class="close">&times;</spam>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="name"><b>Name</b></label>
+                        </div>    
+                        <div class="col-75">
+                            <input type="text" placeholder="Enter your name" name="name" required>
+                        </div>
+                            <label for="age"><b>Age</b></label>
+                            <input type="text" placeholder="Enter your age" name="age" required>
+
+                            <label for="age"><b>Gender</b></label>
+                            <input type="text" placeholder="Select your gender" name="gender" required>
+                        </div>
+                    </div>
+                </form>    
+            </div>
+        </div>
 
         <section class="main">
             <div class="center_main">
@@ -70,13 +91,13 @@
                     </h4>
                 </div>
                 <div class="vertical_line">
-                    <img src="{{url_for('static', filename = 'images/vertical_footer.png')}}">
+                    <img src="../static/images/vertical_footer.png">
                 </div>
                 <div class="owl_icon">
-                    <img src="{{url_for('static', filename = 'images/owl-drawing-art-arctic-fox-owl-fc1c4215db2069128975fa206560eb9c.png')}}">
+                    <img src="../static/images/owl-drawing-art-arctic-fox-owl-fc1c4215db2069128975fa206560eb9c.png">
                 </div>
                 <div class="horizontal_line">
-                    <img src="{{url_for('static', filename = 'images/horizontal_footer.png')}}">
+                    <img src="../static/images/horizontal_footer.png">
                 </div>
                 <div class="footer_bootom">
                     <div class="terms">
@@ -97,6 +118,8 @@
         <footer>
 
         </footer>
+
+        <script src="../static/js/main.js"></script>
 
     </body>
 
