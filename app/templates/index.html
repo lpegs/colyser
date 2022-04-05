@@ -9,7 +9,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Colyser</title>
-        <link href="style.css" rel="stylesheet" />
+        <link href="../static/css/style.css" rel="stylesheet" />
     </head>
 
     <body>
@@ -17,7 +17,7 @@
         <header class="header">
             <div class="center">
                 <div class="colyserlogo">
-                    <img src="images/colyser.png">
+                    <img src="{{url_for('static', filename = 'images/colyser.png')}}">
                 </div>
                 <h4 class="description">
                     COVID-19 CASES AND SYMPTOMS ANALYSER
@@ -70,13 +70,13 @@
                     </h4>
                 </div>
                 <div class="vertical_line">
-                    <img src="images/vertical_footer.png">
+                    <img src="{{url_for('static', filename = 'images/vertical_footer.png')}}">
                 </div>
                 <div class="owl_icon">
-                    <img src="images/owl-drawing-art-arctic-fox-owl-fc1c4215db2069128975fa206560eb9c.png">
+                    <img src="{{url_for('static', filename = 'images/owl-drawing-art-arctic-fox-owl-fc1c4215db2069128975fa206560eb9c.png')}}">
                 </div>
                 <div class="horizontal_line">
-                    <img src="images/horizontal_footer.png">
+                    <img src="{{url_for('static', filename = 'images/horizontal_footer.png')}}">
                 </div>
                 <div class="footer_bootom">
                     <div class="terms">
