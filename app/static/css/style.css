@@ -204,6 +204,7 @@ section.main{
 
 .graph01_data{
     width: 50%;
+    color: #303030;
 }
 
 .textgraph01{
@@ -215,6 +216,7 @@ section.main{
     height: 200px;
     max-width: 300px;
     margin: 0 auto;
+    color: #303030;
 }
 
 #chart02 {
@@ -222,6 +224,7 @@ section.main{
     max-width: 300px;
     margin: 0 auto;
     font-size: 13px;
+    color: #303030;
 }
 
 .graph02{
@@ -241,7 +244,7 @@ section.main{
 
 .graph02_data{
     width: 50%;
-    margin-top: 10%;
+    color: #303030;
 }
 
 .footer{
@@ -412,7 +415,9 @@ section.main{
     }
 
     .graph02_data{
-        width: 100%;
+        width: 50%;
+        margin-top: 10%;
+        color: #303030;
     }
     
     .textgraph02{
