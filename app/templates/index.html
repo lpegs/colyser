@@ -10,6 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Colyser</title>
         <link href="../static/css/style.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
     </head>
 
     <body>
@@ -42,10 +43,10 @@
                             <input class="width90" type="text" placeholder="Enter your name" name="name" required>
                         </div>
                         <div class="col-25">
-                            <label class="width20" for="age"><b>Age</b></label>
+                            <label for="age"><b>Age</b></label>
                         </div>
                         <div class="col-75">
-                            <input type="text" placeholder="Enter your age" name="age" required>
+                            <input  class="width20" type="text" placeholder="Enter your age" name="age" required>
                         </div>
                         <div class="col-25">
                             <label for="gender"><b>Gender</b></label>
@@ -62,6 +63,7 @@
                         </div>
                         
                         <h3>Did you experience the following symptoms?</h3>
+                        
 
                         <div class="row">
                             <div class="col-25">
@@ -185,9 +187,9 @@
 
                     </div>
 
-                    <input type="submit" name="submit" value="Submit">
-                    <input type="reset" name="reset" value="Reset">
-
+                    <input class="submit-reset" type="submit" name="submit" value="Submit"><br>
+                    <input class="submit-reset" type="reset" name="reset" value="Reset">
+                   
                 </form>    
             </div>
         </div>
@@ -196,11 +198,11 @@
             <div class="center_main">
                 <div class="graph01">
                     <div class="graph01_data">
-                        <p>"GRAPH"</p>
+                        <canvas class="column-graph" id="myChart"></canvas>
                     </div><!--graph01_data-->
                     <div class="textgraph01">
                         <p>
-                            The graph on the left side is referred to the number of men and women that have tested positive for COVID-19.
+                            This graph refers to the number of men and women that have tested positive for COVID-19.
                             Remembering that the numbers shown in the graph were all taken from the the form above. 
                             All data is saved inside a database, reused and updated every time.
                         </p>
@@ -215,7 +217,7 @@
                         </p>
                     </div><!--textgraph02-->
                     <div class="graph02_data">
-                        <p>"GRAPH"</p>
+                        <canvas class="column-graph" id="myChart2"></canvas>
                     </div><!--graph02_data-->
                 </div>
             </div><!--center_main-->
@@ -259,6 +261,8 @@
 
         </footer>
 
+        <script src="../static/js/graph01.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
         <script src="../static/js/main.js"></script>
 
     </body>

@@ -108,12 +108,14 @@ html{
     border: 1px solid #888;
     width: 70%;
     overflow: hidden;
+    font-weight: normal;
 }
 
 .row{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    white-space: nowrap;
 }
 
 .row h3{
@@ -136,6 +138,10 @@ html{
     width: 20%;
 }
 
+.submit-reset{
+    text-align: center;
+    width: 100%;
+}
 
 .close {
     color: #aaa;
@@ -178,6 +184,7 @@ section.main{
 
 .graph01{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 20%;
     text-align: center;
@@ -194,8 +201,16 @@ section.main{
     color: #303030;
 }
 
+.column-graph{
+    width:100%;
+    max-width:600px;
+    text-align: center;
+    align-items: center;
+}
+
 .graph02{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     margin-top: 30%;
     text-align: center;
@@ -337,6 +352,23 @@ section.main{
         box-shadow: 0 0 20px 0 rgba(0,0,0,0.24),0 0 50px 0 rgba(0,0,0,0.19);
     }
 
+    .modal-content h3{
+        display: flex;
+        font-size: 16px;
+    }
+
+    .col-25{
+        width: 60%;
+    }
+
+    .col-75{
+        width: 40%;
+    }
+
+    .width20{
+        width: 75%;
+    }
+
     .arrow{
         height: 300px;
         background-color: transparent;
@@ -345,6 +377,24 @@ section.main{
         width: 50px;
         margin-top: 10%;
     } */
+
+    .graph01_data{
+        width: 100%;
+    }
+    
+    .textgraph01{
+        width: 100%;
+        color: #303030;
+    }
+
+    .graph02_data{
+        width: 100%;
+    }
+    
+    .textgraph02{
+        width: 100%;
+        color: #303030;
+    }
 
     .footer{
         background-color: #818081;
