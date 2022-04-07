@@ -95,6 +95,11 @@ html{
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.24),0 0 50px 0 rgba(0,0,0,0.19);
 }
 
+.container{
+    width: 100%;
+    display: inline-block;
+}
+
 .modal-content {
     animation: fadein 0.5s;
     background-color: #c5c5c5;
@@ -102,12 +107,35 @@ html{
     padding: 20px;
     border: 1px solid #888;
     width: 70%;
+    overflow: hidden;
 }
 
-.container{
+.row{
     width: 100%;
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.row h3{
+    width: 100%;
+}
+
+.col-25{
+    width: 25%;
+}
+
+.col-75{
+    width: 75%;
+}
+
+.width90{
+    width: 90%;
+}
+
+.width20{
+    width: 20%;
+}
+
 
 .close {
     color: #aaa;

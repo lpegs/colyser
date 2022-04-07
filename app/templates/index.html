@@ -32,22 +32,162 @@
 
         <div id="formModal" class="modal">
             <div class="container">
-                <form class="modal-content" action="/action_page.php">
+                <form class="modal-content" method="post">
                     <spam class="close">&times;</spam>
                     <div class="row">
                         <div class="col-25">
                             <label for="name"><b>Name</b></label>
                         </div>    
                         <div class="col-75">
-                            <input type="text" placeholder="Enter your name" name="name" required>
+                            <input class="width90" type="text" placeholder="Enter your name" name="name" required>
                         </div>
-                            <label for="age"><b>Age</b></label>
+                        <div class="col-25">
+                            <label class="width20" for="age"><b>Age</b></label>
+                        </div>
+                        <div class="col-75">
                             <input type="text" placeholder="Enter your age" name="age" required>
-
-                            <label for="age"><b>Gender</b></label>
-                            <input type="text" placeholder="Select your gender" name="gender" required>
                         </div>
+                        <div class="col-25">
+                            <label for="gender"><b>Gender</b></label>
+                        </div>
+                        <div class="col-75">
+                            <select name="gender" required>
+                                <option value="S" selected>Select</option>
+                                <option value="M">Male</option>
+                                <option value="F">Female</option>
+                                <option value="O">Other</option>
+                            </select>    
+                            <br>
+                            <br>
+                        </div>
+                        
+                        <h3>Did you experience the following symptoms?</h3>
+
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="cough"><b>Cough</b></label>
+                            </div>
+                            <div class="col-75">
+                                <select name="cough">
+                                    <option value="select" selected>Select</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>    
+                            </div>
+                            <br>
+                            <br>
+
+                            <div class="col-25">
+                                <label for="fever"><b>Fever</b></label>
+                            </div>
+                            <div class="col-75">
+                                <select name="fever">
+                                    <option value="select" selected>Select</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                            <br>
+                            <br>
+
+                            <div class="col-25">
+                                <label for="breath"><b>Difficulty Breathing</b></label>
+                            </div>
+                            <div class="col-75">
+                                <select name="breath">
+                                    <option value="select" selected>Select</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>  
+                            <br>
+                            <br>
+
+                            <div class="col-25">
+                                <label for="fatigue"><b>Fatigue</b></label>
+                            </div>
+                            <div class="col-75">
+                                <select name="fatigue">
+                                    <option value="select" selected>Select</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                            <br>
+                            <br>
+
+                            <div class="col-25">
+                                <label for="bodyache"><b>Muscle or Body ache</b></label>
+                            </div>
+                            <div class="col-75">
+                                <select name="bodyache">
+                                    <option value="select" selected>Select</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                            <br>
+                            <br>
+
+                            <div class="col-25">
+                                <label for="headache"><b>Headache</b></label>
+                            </div>
+                            <div class="col-75">
+                                <select name="headache">
+                                    <option value="select" selected>Select</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                            <br>
+                            <br>
+
+                            <div class="col-25">
+                                <label for="throat"><b>Swollen throat</b></label>
+                            </div>
+                            <div class="col-75">
+                                <select name="throat">
+                                    <option value="select" selected>Select</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                            <br>
+                            <br>
+
+                            <div class="col-25">
+                                <label for="runnynose"><b>Runny nose</b></label>
+                            </div>
+                            <div class="col-75">
+                                <select name="runnynose">
+                                    <option value="select" selected>Select</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>  
+                            </div>
+                            <br>
+                            <br>
+                            
+                            <div class="col-25">
+                                <label for="nausea"><b>Nausea</b></label>
+                            </div>
+                            <div class="col-75">
+                                <select name="nausea">
+                                    <option value="select" selected>Select</option>
+                                    <option value="yes">Yes</option>
+                                    <option value="no">No</option>
+                                </select>  
+                            </div>
+                            <br>
+                            <br>
+
+                        </div>
+
                     </div>
+
+                    <input type="submit" name="submit" value="Submit">
+                    <input type="reset" name="reset" value="Reset">
+
                 </form>    
             </div>
         </div>
