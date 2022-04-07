@@ -4,19 +4,27 @@
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="../static/charts/charts.css-0.9.0/dist/charts.min.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Colyser</title>
         <link href="../static/css/style.css" rel="stylesheet" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
     </head>
 
     <body>
 
         <header class="header">
             <div class="center">
+
+                <div class="casescount">
+                    <h4>
+                        {{ totalcount }} REGISTERED CASES
+                    </h4>
+                </div>
+
                 <div class="colyserlogo">
                     <img src="../static/images/colyser.png">
                 </div>
@@ -198,11 +206,25 @@
             <div class="center_main">
                 <div class="graph01">
                     <div class="graph01_data">
-                        <canvas class="column-graph" id="myChart"></canvas>
+                        <table class="charts-css column show-labels" id="chart01">
+                            <tr>
+                                <th>Men</th>
+                                <td style="--size: {{ mencount }}/10;">{{ mencount }}</td>
+                            </tr>
+                            <tr>
+                                <th>Women</th>
+                                <td style="--size: {{ womencount }}/10;"> {{ womencount }} </td>
+                            </tr>            
+                            <tr>
+                                <th>Other</th>
+                                <td style="--size: {{ othercount }}/10;"> {{ othercount }} </td>
+                            </tr>         
+                        </table>
+                          
                     </div><!--graph01_data-->
                     <div class="textgraph01">
                         <p>
-                            This graph refers to the number of men and women that have tested positive for COVID-19.
+                            This chart refers to the number of men and women that have tested positive for COVID-19.
                             Remembering that the numbers shown in the graph were all taken from the the form above. 
                             All data is saved inside a database, reused and updated every time.
                         </p>
@@ -211,13 +233,51 @@
                 <div class="graph02">
                     <div class="textgraph02">
                         <p>
-                            The graph on the left side is referred to the number of men and women that have tested positive for COVID-19.
+                            This chart refers to the symptoms that were registered out of all the cases.
                             Remembering that the numbers shown in the graph were all taken from the the form above. 
                             All data is saved inside a database, reused and updated every time.
                         </p>
                     </div><!--textgraph02-->
+                    
                     <div class="graph02_data">
-                        <canvas class="column-graph" id="myChart2"></canvas>
+                        <table class="charts-css bar show-labels reverse" id="chart02">
+                            <tr>
+                                <th>Cough</th>
+                                <td style="--size: {{ coughcount }}/10;">{{ coughcount }}</td>
+                            </tr>
+                            <tr>
+                                <th>Fever</th>
+                                <td style="--size: {{ fevercount }}/10;"> {{ fevercount }} </td>
+                            </tr>            
+                            <tr>
+                                <th>Difficulty Breathing</th>
+                                <td style="--size: {{ breathcount }}/10;"> {{ breathcount }} </td>
+                            </tr>
+                            <tr>
+                                <th>Fatigue</th>
+                                <td style="--size: {{ fatiguecount }}/10;"> {{ fatiguecount }} </td>
+                            </tr>   
+                            <tr>
+                                <th>Body Ache</th>
+                                <td style="--size: {{ bodyachecount }}/10;"> {{ bodyachecount }} </td>
+                            </tr>   
+                            <tr>
+                                <th>Headache</th>
+                                <td style="--size: {{ headachecount }}/10;"> {{ headachecount }} </td>
+                            </tr>   
+                            <tr>
+                                <th>Swollen Throat</th>
+                                <td style="--size: {{ throatcount }}/10;"> {{ throatcount }} </td>
+                            </tr>   
+                            <tr>
+                                <th>Runny Nose</th>
+                                <td style="--size: {{ runnynosecount }}/10;"> {{ runnynosecount }} </td>
+                            </tr>   
+                            <tr>
+                                <th>Nausea</th>
+                                <td style="--size: {{ nauseacount }}/10;"> {{ nauseacount }} </td>
+                            </tr>        
+                        </table>
                     </div><!--graph02_data-->
                 </div>
             </div><!--center_main-->
@@ -257,12 +317,6 @@
             </div><!--center2-->
         </section><!--footer-->
 
-        <footer>
-
-        </footer>
-
-        <script src="../static/js/graph01.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
         <script src="../static/js/main.js"></script>
 
     </body>

@@ -31,6 +31,16 @@ html{
     justify-content: center;
 }
 
+.casescount{
+    width: 100%;
+    color: rgb(48, 48, 48);
+    animation: fadein 5s;
+}
+
+.casescount h4{
+    font-size: 10px;
+}
+
 .colyserlogo{
     margin-top: 8%;
     width: 50%;
@@ -201,11 +211,17 @@ section.main{
     color: #303030;
 }
 
-.column-graph{
-    width:100%;
-    max-width:600px;
-    text-align: center;
-    align-items: center;
+#chart01 {
+    height: 200px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+#chart02 {
+    height: 400px;
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 13px;
 }
 
 .graph02{
@@ -225,6 +241,7 @@ section.main{
 
 .graph02_data{
     width: 50%;
+    margin-top: 10%;
 }
 
 .footer{
@@ -314,6 +331,13 @@ section.main{
 
 @media  screen and (max-width: 768px) {
     
+    .casescount{
+        width: 100%;
+        color: rgb(48, 48, 48);
+        animation: fadein 5s;
+        padding-top: 10%;
+    }
+
     .colyserlogo{
         margin-top: 15%;
         width: 80%;
